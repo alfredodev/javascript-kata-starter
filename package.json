@@ -1,0 +1,25 @@
+{
+  "name": "javascript-kata-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "test:watch": "mocha -w src/**/*-test.js",
+    "test:coverage": "nyc mocha src/**/*-test.js",
+    "test": "mocha src/**/*-test.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "dependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^3.5.3",
+    "nyc": "^11.3.0",
+    "should": "^13.1.0",
+    "sinon": "^4.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*-test.js"
+    ]
+  }
+}
